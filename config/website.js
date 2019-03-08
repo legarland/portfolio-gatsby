@@ -9,7 +9,7 @@ module.exports = {
   siteHeadline: 'Making the web a more intersting place', // Headline for schema.org JSONLD
   siteUrl: 'https://logangarland.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: '/logo.png', // Used for SEO and manifest
+  // siteLogo: '/logo.png', // Used for SEO and manifest
   siteDescription: 'Developer Portfolio for Logan Garland | Tucson, AZ',
   author: 'LekoArts', // Author for schema.org JSONLD
 
@@ -20,6 +20,6 @@ module.exports = {
   googleAnalyticsID: 'UA-XXXXXXXX-X',
 
   // Manifest and Progress color
-  themeColor: tailwind.colors.orange,
-  backgroundColor: tailwind.colors.blue,
+  themeColor: tailwind.colors.yellow,
+  backgroundColor: tailwind.colors.black,
 }
