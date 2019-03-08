@@ -78,7 +78,7 @@ const Index = () => (
         <ProjectsWrapper>
           <ProjectCard
             title="Marana Parks"
-            link="https://www.behance.net/legarland"
+            link="https://www.behance.net/gallery/75954881/Marana-Parks-Recreation"
             bg="url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/56e3b475954881.5c5b462c3a5fd.png') no-repeat center center"
           />
           <ProjectCard
