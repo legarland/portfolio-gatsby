@@ -20,18 +20,20 @@ const Projects = ({ children, offset }) => (
     </Content>
     <Divider speed={0.1} offset={offset} factor={2}>
       <UpDown>
-        <SVG icon="triangle" width={8} stroke={colors.yellow} left="25%" top="5%" />
+        <SVG icon="box" width={8} fill={colors['grey-darker']} left="25%" top="8%" />
         <SVG icon="css3" hiddenMobile width={12} fill={colors['blue-dark']} left="45%" top="10%" />
+        <SVG icon="html" width={16} fill={colors['grey-darker']} left="60%" top="80%" />
       </UpDown>
       <UpDownWide>
-        <SVG icon="typescript" hiddenMobile width={16} fill={colors['grey-darkest']} left="20%" top="90%" />
+        <SVG icon="typescript" hiddenMobile width={16} fill={colors['grey-darkest']} left="20%" top="80%" />
         <SVG icon="nodejs" width={6} fill={colors.white} left="75%" top="10%" />
       </UpDownWide>
-      <SVG icon="html" width={8} fill={colors.white} left="4%" top="20%" />
-      <SVG icon="box" width={6} fill={colors.yellow} left="10%" top="10%" />
-      <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
+      <SVG icon="box" width={8} fill={colors.yellow} left="4%" top="20%" />
+      <SVG icon="vs" width={8} fill={colors['yellow-dark']} left="35%" top="75%" />
+      <SVG icon="angular" width={6} fill={colors.yellow} left="10%" top="10%" />
+      <SVG icon="html" width={12} fill={colors.white} left="39%" top="26%" />
       <SVG icon="sass" width={16} fill={colors.black} left="75%" top="30%" />
-      <SVG icon="hexa" width={8} stroke={colors['grey-dark']} left="80%" top="70%" />
+      <SVG icon="hexa" width={8} stroke={colors['grey-dark']} left="80%" top="90%" />
     </Divider>
   </>
 )

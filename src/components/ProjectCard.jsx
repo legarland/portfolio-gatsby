@@ -27,7 +27,7 @@ const Text = styled.div`
 `
 
 const Title = styled.div`
-  ${tw`text-black uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans text-center`};
+  ${tw`text-black uppercase text-xl md:text-2xl xl:text-3xl tracking-wide font-sans text-center`};
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
   margin-top: 10px;
 `

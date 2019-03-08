@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { Parallax } from 'react-spring/renderprops-addons.cjs'
+import { colors } from '../../tailwind'
 
 // Components
 import Layout from '../components/Layout'
@@ -65,16 +66,42 @@ const SocialLink = styled.a`
   margin-right: 20px;
 `
 
+const Button = styled.button`
+  color: #fff;
+  border: solid 2px #ffffff;
+  background: transparent;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    border-color: ${colors.yellow};
+    color: ${colors.yellow};
+  }
+`
+
 const Index = () => (
   <>
     <Layout />
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>Hi, I'm Logan</BigTitle>
-        <Subtitle>I build all the things</Subtitle>
+        <Subtitle>I'm a full stack developer.</Subtitle>
+        {/* <Button
+          onClick={() => {
+            document.getElementById('work-title').scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+              inline: 'nearest',
+            })
+          }}
+        >
+          View my Work
+        </Button> */}
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
+        <Title id="work-title">Recent Work</Title>
         <ProjectsWrapper>
           <ProjectCard
             title="Marana Parks"
@@ -97,9 +124,12 @@ const Index = () => (
             bg="url('https://mir-s3-cdn-cf.behance.net/projects/original/75ac6852246043.Y3JvcCw2NTAsNTA4LDI3NiwxMDE.jpg')"
           />
         </ProjectsWrapper>
+        <ContactText style={{ justifyContent: 'center' }}>
+          View more of my work on&#160;<a href="https://www.behance.net/legarland">Behance.</a>
+        </ContactText>
       </Projects>
       <About offset={3}>
-        <Title>About</Title>
+        <Title>About Me</Title>
         <AboutHero>
           <Avatar
             src="https://media.licdn.com/dms/image/C4E03AQEyVFhRYQN-AA/profile-displayphoto-shrink_200_200/0?e=1557360000&v=beta&t=yQTxsFAkbUfbdbDqkgE3OpAPBrpD2_UJR5l0L2kRUxI"
