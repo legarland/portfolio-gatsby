@@ -7,27 +7,36 @@ const Wrapper = styled.a`
   width: 100%;
   ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 text-white`};
   background: ${props => props.bg};
+  background-size: cover;
+  min-height: 300px;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     transform: translateY(-5px);
   }
 `
 
+const Outer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 const Text = styled.div`
-  ${tw`opacity-75 font-sans text-sm md:text-base`};
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  ${tw`opacity-75 font-sans text-sm md:text-base text-black`};
+  display: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 `
 
 const Title = styled.div`
-  ${tw`text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-8`};
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  ${tw`text-black uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans text-center`};
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+  margin-top: 10px;
 `
 
 const ProjectCard = ({ title, link, children, bg }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
-    <Text>{children}</Text>
+  <Outer>
+    <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg} />
     <Title>{title}</Title>
-  </Wrapper>
+  </Outer>
 )
 
 export default ProjectCard
