@@ -17,7 +17,7 @@ module.exports = {
   userTwitter: '@floppycatfish', // Twitter Username
   ogSiteName: 'floppycatfish', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
-  googleAnalyticsID: 'UA-XXXXXXXX-X',
+  googleAnalyticsID: 'UA-12696426-3',
 
   // Manifest and Progress color
   themeColor: tailwind.colors.yellow,
