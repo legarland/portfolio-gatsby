@@ -36,6 +36,8 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
+        icon: `src/images/icon.png`,
+        include_favicon: true,
         // icons: [
         //   {
         //     src: '/favicons/android-chrome-192x192.png',
