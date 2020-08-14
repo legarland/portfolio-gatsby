@@ -131,7 +131,7 @@ const Index = () => (
         <Title>About Me</Title>
         <AboutHero>
           <Avatar
-            src="https://media.licdn.com/dms/image/C4E03AQEyVFhRYQN-AA/profile-displayphoto-shrink_200_200/0?e=1557360000&v=beta&t=yQTxsFAkbUfbdbDqkgE3OpAPBrpD2_UJR5l0L2kRUxI"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQEyVFhRYQN-AA/profile-displayphoto-shrink_400_400/0?e=1602720000&v=beta&t=ZQwXoJtCl-QhKQF80p3aVGfFERiqqqwtAm1EjIaxfdU"
             alt="Logan Garland"
           />
           <AboutSub>
@@ -139,7 +139,7 @@ const Index = () => (
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          I have over 12 years of software development experience with a core focus on dynamic client-side web
+          I have over 15 years of software development experience with a core focus on dynamic client-side web
           technologies. I approach all problems with the mindset that they can and will be solved with the right
           combination of knowledge, research and hard work. I love being a developer, and I'm glad I have to opportunity
           to do it for a living. I am always open to new projects, so feel free to contact me using one of the methods
@@ -170,7 +170,7 @@ const Index = () => (
             </SocialLink>
           </ContactText>
         </Inner>
-        <Footer>&copy; 2019 Logan Garland</Footer>
+        <Footer>&copy; 2020 Logan Garland</Footer>
       </Contact>
     </Parallax>
   </>
